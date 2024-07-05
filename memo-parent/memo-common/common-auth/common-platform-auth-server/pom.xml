@@ -7,7 +7,7 @@
     <parent>
         <artifactId>common-auth</artifactId>
         <groupId>vip.yeee.memo</groupId>
-        <version>3.2.2-SNAPSHOT</version>
+        <version>4.0.0-SNAPSHOT</version>
         <!-- 设定一个空值将始终从仓库中获取，不从本地路径获取. -->
         <!--        <relativePath/>-->
     </parent>

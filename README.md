@@ -132,7 +132,7 @@ cd memo-parent && mvn clean install
     <parent>
         <artifactId>memo-parent</artifactId>
         <groupId>vip.yeee.memo</groupId>
-        <version>3.2.2-SNAPSHOT</version>
+        <version>4.0.0-SNAPSHOT</version>
         <relativePath/>
     </parent>
     <artifactId>api-auth-server</artifactId>
@@ -201,7 +201,7 @@ cd memo-parent && mvn clean install
     <parent>
         <artifactId>memo-parent</artifactId>
         <groupId>vip.yeee.memo</groupId>
-        <version>3.2.2-SNAPSHOT</version>
+        <version>4.0.0-SNAPSHOT</version>
         <relativePath/>
     </parent>
     <artifactId>api-auth-server</artifactId>
