@@ -13,7 +13,7 @@ import org.springframework.data.redis.connection.RedisGeoCommands;
 import vip.yeee.memo.base.redis.utils.RedisUtil;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * description......

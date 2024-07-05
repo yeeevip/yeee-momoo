@@ -13,7 +13,7 @@ import vip.yeee.memo.common.domain.mapper.sys.SysUserMapper;
 import vip.yeee.memo.demo.springcloud.webauth.server.model.vo.UserAuthVo;
 import vip.yeee.memo.demo.springcloud.webauth.server.service.CustomUserDetailsService;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * description......

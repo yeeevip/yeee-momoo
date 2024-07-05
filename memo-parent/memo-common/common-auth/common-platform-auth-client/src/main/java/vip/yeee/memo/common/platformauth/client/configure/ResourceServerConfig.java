@@ -2,6 +2,13 @@ package vip.yeee.memo.common.platformauth.client.configure;
 
 import cn.hutool.core.util.ArrayUtil;
 import com.google.common.collect.Sets;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequestWrapper;
+import jakarta.servlet.http.HttpServletResponse;
 import okhttp3.OkHttpClient;
 import org.slf4j.Logger;
 import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
@@ -34,13 +41,6 @@ import vip.yeee.memo.common.platformauth.client.handle.CustomAuthenticationEntry
 import vip.yeee.memo.common.platformauth.client.properties.AuthClientProperties;
 import vip.yeee.memo.base.websecurityoauth2.constant.SecurityUserTypeEnum;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletRequestWrapper;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -98,11 +98,11 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .authorizeRequests()
+                .authorizeHttpRequests()
                 .requestMatchers(EndpointRequest.toAnyEndpoint()).permitAll()
-                .antMatchers(ArrayUtil.toArray(anonymousUrls, String.class)).permitAll()
+                .requestMatchers(ArrayUtil.toArray(anonymousUrls, String.class)).permitAll()
                 // 内部调用
-                .antMatchers("/server/**").permitAll()
+                .requestMatchers("/server/**").permitAll()
 //                .antMatchers("/**/front/**").hasAnyAuthority(SecurityUserTypeEnum.SYSTEM_USER.getRole())
 //                .antMatchers("/**/system/**").hasAnyAuthority(SecurityUserTypeEnum.FRONT_USER.getRole())
 //                .antMatchers("/**/front/**").hasRole(SecurityUserTypeEnum.FRONT_USER.getRole())

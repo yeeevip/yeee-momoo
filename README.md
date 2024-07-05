@@ -1,6 +1,6 @@
 ## 框架说明
 
-- 经过多年实战经验中积累的一套基于**SpringBoot**、**SpringCloud**的**JavaWeb通用脚手架**
+- 基于**SpringBoot3**、**SpringCloud**的**JavaWeb通用脚手架**
 - 核心设计思想是将web应用开发中的通用功能**抽象组件化**，从而达到**轻量级**、**可拓展**
 
 ## 项目案例

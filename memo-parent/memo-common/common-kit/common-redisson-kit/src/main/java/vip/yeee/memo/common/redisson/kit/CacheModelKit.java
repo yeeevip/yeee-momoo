@@ -1,11 +1,11 @@
 package vip.yeee.memo.common.redisson.kit;
 
+import jakarta.annotation.Resource;
 import org.redisson.api.*;
 import org.redisson.client.codec.Codec;
 import org.redisson.codec.JsonJacksonCodec;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;

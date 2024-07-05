@@ -1,10 +1,9 @@
 package vip.yeee.memo.demo.jasypt;
 
+import jakarta.annotation.Resource;
 import org.jasypt.encryption.StringEncryptor;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import javax.annotation.Resource;
 
 /**
  * description......

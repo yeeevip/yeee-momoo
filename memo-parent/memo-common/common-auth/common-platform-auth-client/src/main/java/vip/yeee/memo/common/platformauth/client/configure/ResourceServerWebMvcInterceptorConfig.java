@@ -1,11 +1,11 @@
 package vip.yeee.memo.common.platformauth.client.configure;
 
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import vip.yeee.memo.common.platformauth.client.interceptor.SecurityTokenInterceptor;
 
-import javax.annotation.Resource;
 
 /**
  * 资源配置类

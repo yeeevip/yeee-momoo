@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import vip.yeee.memo.demo.mq.rocketmq.producer.config.MqConfig;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * RocketMQ Template

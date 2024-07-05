@@ -12,7 +12,7 @@ import vip.yeee.memo.base.model.rest.CommonResult;
 import vip.yeee.memo.demo.springcloud.apiauth.server.model.request.UserLoginRequest;
 import vip.yeee.memo.demo.springcloud.apiauth.server.biz.ApiAuthBiz;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.security.KeyPair;
 import java.security.interfaces.RSAPublicKey;
 import java.util.Map;

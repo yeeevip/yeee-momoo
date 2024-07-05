@@ -9,7 +9,7 @@ import vip.yeee.memo.demo.thirdsdk.pay.model.vo.req.UnifiedOrderRefundReqVO;
 import vip.yeee.memo.demo.thirdsdk.pay.model.vo.req.UnifiedOrderReqVO;
 import vip.yeee.memo.demo.thirdsdk.pay.service.UnifiedPayOrderService;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import javax.validation.Valid;
 
 /**

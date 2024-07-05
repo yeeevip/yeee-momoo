@@ -15,15 +15,14 @@ import cn.hyperchain.sdk.service.AccountService;
 import cn.hyperchain.sdk.service.ContractService;
 import cn.hyperchain.sdk.service.ServiceManager;
 import cn.hyperchain.sdk.transaction.Transaction;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import vip.yeee.memo.demo.blockchain.hyperchain.biz.bo.BlockchainAccountBO;
 import vip.yeee.memo.demo.blockchain.hyperchain.biz.bo.NFTPropertyMetaDataBO;
 import vip.yeee.memo.demo.blockchain.hyperchain.biz.bo.NftIssueBO;
 import vip.yeee.memo.demo.blockchain.hyperchain.biz.config.ChainProperties;
 import lombok.extern.slf4j.Slf4j;
 import vip.yeee.memo.base.util.JacksonUtils;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 
 /**
  * description......

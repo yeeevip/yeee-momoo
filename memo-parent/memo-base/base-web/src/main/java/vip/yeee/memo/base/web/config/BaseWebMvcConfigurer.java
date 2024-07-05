@@ -1,12 +1,11 @@
 package vip.yeee.memo.base.web.config;
 
 import cn.hutool.core.collection.CollectionUtil;
+import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import vip.yeee.memo.base.web.properties.BaseWebProperty;
-
-import javax.annotation.Resource;
 
 /**
  * description......

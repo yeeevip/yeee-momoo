@@ -13,8 +13,6 @@
 		<module>register</module>
 		<!-- 服务调用 -->
 		<module>rpc</module>
-		<!-- 响应式编程 -->
-		<module>reactive-programming</module>
 		<!-- 网关 -->
 		<module>gateway</module>
 		<!-- 配置中心 -->

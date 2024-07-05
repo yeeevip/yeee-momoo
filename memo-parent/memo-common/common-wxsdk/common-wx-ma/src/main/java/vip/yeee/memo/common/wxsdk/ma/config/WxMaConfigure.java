@@ -10,6 +10,7 @@ import cn.binarywang.wx.miniapp.message.WxMaMessageHandler;
 import cn.binarywang.wx.miniapp.message.WxMaMessageRouter;
 import cn.binarywang.wx.miniapp.message.WxMaXmlOutMessage;
 import cn.binarywang.wx.miniapp.util.WxMaConfigHolder;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.api.WxConsts;
 import me.chanjar.weixin.common.error.WxErrorException;
@@ -24,7 +25,6 @@ import redis.clients.jedis.JedisPoolConfig;
 import vip.yeee.memo.common.wxsdk.ma.properties.WxMaProperties;
 import vip.yeee.memo.common.wxsdk.ma.service.IWxMaConfigService;
 
-import javax.annotation.Resource;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;

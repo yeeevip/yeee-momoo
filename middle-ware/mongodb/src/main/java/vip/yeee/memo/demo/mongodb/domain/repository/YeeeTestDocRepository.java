@@ -1,6 +1,7 @@
 package vip.yeee.memo.demo.mongodb.domain.repository;
 
 import cn.hutool.core.util.IdUtil;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -10,7 +11,6 @@ import org.springframework.stereotype.Component;
 import vip.yeee.memo.demo.mongodb.domain.entity.YeeeTestDoc;
 import vip.yeee.memo.demo.mongodb.utils.BusinessUtils;
 
-import javax.annotation.Resource;
 import java.util.Date;
 
 /**

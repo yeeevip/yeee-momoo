@@ -1,10 +1,10 @@
 package vip.yeee.memo.base.redis.kit;
 
 import cn.hutool.core.date.DateUtil;
+import jakarta.annotation.Resource;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 

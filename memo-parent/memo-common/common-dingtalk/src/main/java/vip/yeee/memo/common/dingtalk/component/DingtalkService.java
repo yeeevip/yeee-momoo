@@ -4,12 +4,12 @@ import com.dingtalk.api.DefaultDingTalkClient;
 import com.dingtalk.api.DingTalkClient;
 import com.dingtalk.api.request.OapiRobotSendRequest;
 import com.dingtalk.api.response.OapiRobotSendResponse;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import vip.yeee.memo.common.dingtalk.properties.DingtalkProperty;
 
-import javax.annotation.Resource;
 import java.util.Map;
 
 /**

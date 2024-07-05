@@ -9,8 +9,7 @@ import java.io.Serializable;
  */
 @Data
 public class OrderClause implements Serializable {
-    private static final long serialVersionUID = -7864088519623641693L;
-    
+
     private String k; //key
     private String t; //type
     

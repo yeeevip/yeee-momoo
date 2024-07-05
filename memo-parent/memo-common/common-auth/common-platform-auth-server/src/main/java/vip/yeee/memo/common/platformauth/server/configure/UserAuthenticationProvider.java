@@ -1,5 +1,6 @@
 package vip.yeee.memo.common.platformauth.server.configure;
 
+import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -13,7 +14,6 @@ import vip.yeee.memo.base.util.LogUtils;
 import vip.yeee.memo.base.websecurityoauth2.constant.MessageConstant;
 import vip.yeee.memo.base.websecurityoauth2.model.SecurityUser;
 
-import javax.annotation.Resource;
 
 /**
  * 自定义认证逻辑，这里可以拿到用户输入的用户名密码，可以做【等保】

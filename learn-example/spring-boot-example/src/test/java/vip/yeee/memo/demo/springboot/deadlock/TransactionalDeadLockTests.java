@@ -14,7 +14,7 @@ import tk.mybatis.mapper.entity.Example;
 import vip.yeee.memo.demo.springboot.domain.mysql.entity.TempTest1;
 import vip.yeee.memo.demo.springboot.domain.mysql.mapper.TempTest1Mapper;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;

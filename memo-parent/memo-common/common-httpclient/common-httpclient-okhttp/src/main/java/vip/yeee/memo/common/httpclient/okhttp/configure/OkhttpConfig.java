@@ -1,12 +1,12 @@
 package vip.yeee.memo.common.httpclient.okhttp.configure;
 
+import jakarta.annotation.Resource;
 import okhttp3.ConnectionPool;
 import okhttp3.OkHttpClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import vip.yeee.memo.common.httpclient.okhttp.property.OkhttpProperties;
 
-import javax.annotation.Resource;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;

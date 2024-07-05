@@ -4,11 +4,11 @@ import cn.hutool.crypto.SecureUtil;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 import vip.yeee.memo.common.appauth.server.model.vo.JTokenVo;
 import vip.yeee.memo.common.appauth.server.properties.ApiAuthServerProperties;
 
-import javax.annotation.Resource;
 import java.util.Date;
 
 /**

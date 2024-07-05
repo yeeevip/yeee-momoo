@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 import vip.yeee.memo.base.model.rest.CommonResult;
 import vip.yeee.memo.demo.scloud.tac.seatapgsql.biz.SeataPgSQLBiz;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 @RestController
 public class SeataPgSQLController {

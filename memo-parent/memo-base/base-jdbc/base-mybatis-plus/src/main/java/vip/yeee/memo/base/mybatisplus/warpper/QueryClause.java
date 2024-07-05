@@ -10,7 +10,6 @@ import java.util.List;
  */
 @Data
 public class QueryClause implements Serializable {
-    private static final long serialVersionUID = -6014076206210293128L;
     
     private List<WhereClause> w;
     private List<OrderClause> o;

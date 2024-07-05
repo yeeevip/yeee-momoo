@@ -1,11 +1,11 @@
 package vip.yeee.memo.demo.stools.kit.service;
 
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBlockingDeque;
 import org.springframework.stereotype.Component;
 import vip.yeee.memo.common.redisson.kit.DelayQueueKit;
 
-import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 

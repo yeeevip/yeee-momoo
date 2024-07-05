@@ -2,7 +2,6 @@ package vip.yeee.memo.demo.scloud.rpc.feign02.model;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import feign.FeignException.FeignClientException;
-import lombok.var;
 import org.slf4j.Logger;
 
 import java.nio.ByteBuffer;

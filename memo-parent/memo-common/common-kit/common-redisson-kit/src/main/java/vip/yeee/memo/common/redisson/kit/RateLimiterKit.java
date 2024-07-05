@@ -1,12 +1,11 @@
 package vip.yeee.memo.common.redisson.kit;
 
+import jakarta.annotation.Resource;
 import org.redisson.api.RRateLimiter;
 import org.redisson.api.RateIntervalUnit;
 import org.redisson.api.RateType;
 import org.redisson.api.RedissonClient;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 /**
  * description......

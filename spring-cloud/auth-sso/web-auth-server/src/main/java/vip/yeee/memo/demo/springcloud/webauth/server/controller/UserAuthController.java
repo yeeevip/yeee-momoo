@@ -9,7 +9,7 @@ import vip.yeee.memo.demo.springcloud.webauth.server.model.request.UserAuthReque
 import vip.yeee.memo.base.model.rest.CommonResult;
 import vip.yeee.memo.demo.springcloud.webauth.server.model.vo.UserAuthVo;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * description......

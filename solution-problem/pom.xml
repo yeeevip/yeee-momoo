@@ -18,8 +18,6 @@
         <module>sub-database-table</module>
         <!-- netty -->
         <module>netty</module>
-        <!-- webservice调用、发布 -->
-        <module>webservice-example</module>
         <!-- websocket、web与服务端长连接 -->
         <module>websocket-example</module>
         <module>tokenizing</module>

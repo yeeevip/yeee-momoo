@@ -1,5 +1,6 @@
 package vip.yeee.memo.common.redisson.kit;
 
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBloomFilter;
 import org.redisson.api.RedissonClient;
@@ -7,7 +8,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**

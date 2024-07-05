@@ -1,13 +1,13 @@
 package vip.yeee.memo.common.sso.thirdapp.controller;
 
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import vip.yeee.memo.base.model.rest.CommonResult;
 import vip.yeee.memo.common.sso.thirdapp.service.ThirdAppSsoService;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**

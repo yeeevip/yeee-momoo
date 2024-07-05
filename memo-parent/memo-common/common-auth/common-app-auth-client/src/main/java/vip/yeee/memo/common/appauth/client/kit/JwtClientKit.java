@@ -3,13 +3,13 @@ package vip.yeee.memo.common.appauth.client.kit;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
+import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.springframework.stereotype.Component;
 import vip.yeee.memo.base.util.LogUtils;
 import vip.yeee.memo.common.appauth.client.properties.ApiAuthClientProperties;
 import vip.yeee.memo.base.model.exception.BizException;
 
-import javax.annotation.Resource;
 import java.util.Date;
 
 /**

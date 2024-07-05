@@ -7,6 +7,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
+import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.security.authentication.*;
@@ -27,7 +28,6 @@ import vip.yeee.memo.base.websecurityoauth2.model.AuthUser;
 import vip.yeee.memo.base.websecurityoauth2.model.Oauth2TokenVo;
 import vip.yeee.memo.base.websecurityoauth2.model.SecurityUser;
 
-import javax.annotation.Resource;
 import java.util.*;
 import java.util.stream.Collectors;
 

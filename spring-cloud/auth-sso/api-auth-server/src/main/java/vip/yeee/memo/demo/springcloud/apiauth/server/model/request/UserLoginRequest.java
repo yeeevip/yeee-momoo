@@ -1,8 +1,7 @@
 package vip.yeee.memo.demo.springcloud.apiauth.server.model.request;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
-
-import javax.validation.constraints.NotBlank;
 
 /**
  * description......

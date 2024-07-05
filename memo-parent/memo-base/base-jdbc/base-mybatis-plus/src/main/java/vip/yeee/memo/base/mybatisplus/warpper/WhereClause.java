@@ -9,7 +9,6 @@ import java.io.Serializable;
  */
 @Data
 public class WhereClause implements Serializable {
-    private static final long serialVersionUID = 5312268117297358992L;
     
     private String k; //key
     private Object v; //val

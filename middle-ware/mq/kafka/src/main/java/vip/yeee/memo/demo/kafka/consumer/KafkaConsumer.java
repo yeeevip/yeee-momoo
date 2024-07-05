@@ -6,6 +6,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.stereotype.Component;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -34,7 +35,7 @@ public class KafkaConsumer {
                     , record.topic(), record.partition(), record.offset(), record.value());
 //            ack.acknowledge();
             // 从上一次 poll() 拉取到的，所有正在处理的偏移量将被提交，其余的将被丢弃，本次处理失败和未处理的记录，将在下一次传递
-            ack.nack(TimeUnit.SECONDS.toMillis(10));
+            ack.nack(Duration.ofSeconds(10));
         }
     }
 

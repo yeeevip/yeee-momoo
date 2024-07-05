@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 import vip.yeee.memo.base.model.rest.CommonResult;
 import vip.yeee.memo.demo.scloud.tac.seata02.biz.SeataClient02Biz;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 @RestController
 public class SeataClient02Controller {

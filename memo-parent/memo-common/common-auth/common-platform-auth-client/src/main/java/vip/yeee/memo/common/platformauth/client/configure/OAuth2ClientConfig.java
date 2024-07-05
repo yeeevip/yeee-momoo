@@ -18,7 +18,7 @@
 //import vip.yeee.memo.base.model.exception.BizException;
 //import vip.yeee.memo.base.util.LogUtils;
 //
-//import javax.annotation.Resource;
+//import jakarta.annotation.Resource;
 //import java.io.IOException;
 //import java.nio.charset.StandardCharsets;
 //

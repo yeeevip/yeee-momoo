@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import vip.yeee.memo.demo.scloud.tac.seatapgsql.domain.pgsql.entity.Test1;
 import vip.yeee.memo.demo.scloud.tac.seatapgsql.domain.pgsql.service.Test1Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * description......

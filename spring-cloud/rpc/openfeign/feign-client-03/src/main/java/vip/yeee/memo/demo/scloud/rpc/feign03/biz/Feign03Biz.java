@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 import vip.yeee.memo.demo.scloud.rpc.feign03.feign.Feign01FeignClient;
 import vip.yeee.memo.demo.scloud.rpc.feign03.feign.Feign02FeignClient;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * description......

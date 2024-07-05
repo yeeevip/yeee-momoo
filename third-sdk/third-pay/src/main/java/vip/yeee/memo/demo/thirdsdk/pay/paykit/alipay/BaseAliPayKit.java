@@ -16,6 +16,7 @@ import com.alipay.api.response.AlipayTradeQueryResponse;
 import com.alipay.api.response.AlipayTradeRefundResponse;
 import lombok.extern.slf4j.Slf4j;
 import vip.yeee.memo.base.model.exception.BizException;
+import vip.yeee.memo.base.web.utils.HttpRequestUtils;
 import vip.yeee.memo.base.web.utils.SpringContextUtils;
 import vip.yeee.memo.demo.thirdsdk.pay.model.bo.*;
 import vip.yeee.memo.demo.thirdsdk.pay.paykit.PayContext;
@@ -172,7 +173,7 @@ public abstract class BaseAliPayKit implements PayKit {
 
     @Override
     public Pair<String, ChannelRetMsgBO> checkAndParsePayNoticeParams() throws Exception {
-        Map<String, String> map = ServletUtil.getParamMap(SpringContextUtils.getHttpServletRequest());
+        Map<String, String> map = HttpRequestUtils.getParamMap(SpringContextUtils.getHttpServletRequest());
         log.info("checkAndParseNoticeParams map = {}", map);
         AliPayConfigBO ali = PayContext.getContext().getAliPayConfig();
         boolean verifyResult;

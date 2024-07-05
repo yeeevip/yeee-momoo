@@ -2,6 +2,8 @@ package vip.yeee.memo.common.oss.kit;
 
 import com.qiniu.util.Auth;
 import com.qiniu.util.StringMap;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
@@ -12,8 +14,6 @@ import vip.yeee.memo.common.oss.constant.OssConstant;
 import vip.yeee.memo.common.oss.model.StsAuthInfo;
 import vip.yeee.memo.common.oss.properties.QiniuOssProperties;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;

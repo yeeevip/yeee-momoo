@@ -12,15 +12,16 @@ import com.github.binarywang.wxpay.bean.request.*;
 import com.github.binarywang.wxpay.bean.result.WxPayRefundV3Result;
 import com.github.binarywang.wxpay.exception.WxPayException;
 import com.github.binarywang.wxpay.service.WxPayService;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import vip.yeee.memo.base.model.exception.BizException;
+import vip.yeee.memo.base.web.utils.HttpRequestUtils;
 import vip.yeee.memo.base.web.utils.SpringContextUtils;
 import vip.yeee.memo.demo.thirdsdk.pay.model.bo.*;
 import vip.yeee.memo.demo.thirdsdk.pay.paykit.PayContext;
 import vip.yeee.memo.demo.thirdsdk.pay.paykit.PayKit;
 
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * description......
@@ -127,7 +128,7 @@ public abstract class BaseWxV3PayKit implements PayKit {
         header.setSignature(request.getHeader("Wechatpay-Signature"));
 
         // 获取加密信息
-        String params = ServletUtil.getBody(request);
+        String params = HttpRequestUtils.getBody(request);
 
         log.info("\n【请求头信息】：{}\n【加密数据】：{}", header, params);
 
@@ -169,7 +170,7 @@ public abstract class BaseWxV3PayKit implements PayKit {
         header.setSignature(request.getHeader("Wechatpay-Signature"));
 
         // 获取加密信息
-        String params = ServletUtil.getBody(request);
+        String params = HttpRequestUtils.getBody(request);
 
         log.info("\n【请求头信息】：{}\n【加密数据】：{}", header, params);
 

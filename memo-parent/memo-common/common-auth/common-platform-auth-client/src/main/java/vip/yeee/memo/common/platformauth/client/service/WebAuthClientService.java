@@ -11,7 +11,7 @@
 //import vip.yeee.memo.base.websecurityoauth2.constant.MessageConstant;
 //import vip.yeee.memo.base.websecurityoauth2.model.Oauth2TokenVo;
 //
-//import javax.annotation.Resource;
+//import jakarta.annotation.Resource;
 //
 ///**
 // * description......

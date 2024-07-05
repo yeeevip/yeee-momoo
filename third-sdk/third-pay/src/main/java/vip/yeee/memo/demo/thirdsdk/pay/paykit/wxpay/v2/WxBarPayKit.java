@@ -7,7 +7,7 @@ import vip.yeee.memo.demo.thirdsdk.pay.model.bo.UnifiedOrderReqBO;
 import vip.yeee.memo.demo.thirdsdk.pay.model.bo.UnifiedOrderRespBO;
 import vip.yeee.memo.demo.thirdsdk.pay.constant.PayConstant;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * description......

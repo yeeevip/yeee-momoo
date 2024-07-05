@@ -1,8 +1,8 @@
 package vip.yeee.memo.demo.thirdsdk.pay.model.vo.req;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 /**

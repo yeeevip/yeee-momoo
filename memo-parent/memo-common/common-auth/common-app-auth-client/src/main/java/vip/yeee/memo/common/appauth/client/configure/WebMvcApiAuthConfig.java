@@ -1,6 +1,7 @@
 package vip.yeee.memo.common.appauth.client.configure;
 
 import cn.hutool.core.collection.CollectionUtil;
+import jakarta.annotation.Resource;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
@@ -10,7 +11,6 @@ import vip.yeee.memo.common.appauth.client.constant.ApiAuthConstant;
 import vip.yeee.memo.common.appauth.client.interceptor.JwtAuthCheckInterceptor;
 import vip.yeee.memo.common.appauth.client.properties.ApiAuthClientProperties;
 
-import javax.annotation.Resource;
 
 /**
  * 资源配置类

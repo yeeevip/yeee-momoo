@@ -1,6 +1,7 @@
 package vip.yeee.memo.common.websocket.spring.ws;
 
-import javax.websocket.Session;
+import jakarta.websocket.Session;
+
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /**

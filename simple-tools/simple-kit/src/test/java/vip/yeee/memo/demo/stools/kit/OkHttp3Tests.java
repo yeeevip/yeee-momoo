@@ -1,13 +1,13 @@
 package vip.yeee.memo.demo.stools.kit;
 
 import cn.hutool.core.thread.ThreadUtil;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.ConnectionPool;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import vip.yeee.memo.common.httpclient.okhttp.kit.OkHttp3Kit;
 
-import javax.annotation.Resource;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 

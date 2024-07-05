@@ -20,7 +20,7 @@ import com.github.pagehelper.PageInfo;
 </#if>
 import vip.yeee.memo.base.model.vo.PageVO;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 import java.util.stream.Collectors;
 

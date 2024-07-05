@@ -1,5 +1,6 @@
 package vip.yeee.memo.common.redisson.kit;
 
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBlockingDeque;
 import org.redisson.api.RDelayedQueue;
@@ -7,7 +8,6 @@ import org.redisson.api.RedissonClient;
 import org.springframework.stereotype.Component;
 import vip.yeee.memo.common.redisson.util.Md5Util;
 
-import javax.annotation.Resource;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;

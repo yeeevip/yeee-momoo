@@ -1,5 +1,6 @@
 package vip.yeee.memo.common.platformauth.server.configure;
 
+import jakarta.annotation.Resource;
 import org.apache.commons.codec.binary.Base64;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,6 @@ import org.springframework.security.oauth2.provider.token.TokenEnhancer;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import vip.yeee.memo.base.util.LogUtils;
 
-import javax.annotation.Resource;
 import java.nio.charset.Charset;
 import java.util.Date;
 

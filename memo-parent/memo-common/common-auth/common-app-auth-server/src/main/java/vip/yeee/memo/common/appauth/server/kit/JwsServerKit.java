@@ -7,6 +7,7 @@ import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;
 import com.nimbusds.jose.crypto.RSASSASigner;
 import com.nimbusds.jose.jwk.RSAKey;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.core.io.ClassPathResource;
@@ -15,7 +16,6 @@ import org.springframework.stereotype.Component;
 import vip.yeee.memo.common.appauth.server.model.dto.PayloadDto;
 import vip.yeee.memo.common.appauth.server.properties.ApiAuthServerProperties;
 
-import javax.annotation.Resource;
 import java.security.KeyPair;
 import java.util.Date;
 

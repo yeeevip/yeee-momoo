@@ -1,5 +1,7 @@
 package vip.yeee.memo.demo.thirdsdk.pay.controller;
 
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -14,8 +16,6 @@ import vip.yeee.memo.demo.thirdsdk.pay.model.vo.resp.CheckPayStateResVO;
 import vip.yeee.memo.demo.thirdsdk.pay.model.vo.resp.SubmitOrderRespVO;
 import vip.yeee.memo.demo.thirdsdk.pay.paykit.PayKit;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * description......

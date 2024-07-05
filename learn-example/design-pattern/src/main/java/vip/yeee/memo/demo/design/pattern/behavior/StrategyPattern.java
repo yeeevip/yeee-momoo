@@ -1,11 +1,11 @@
 package vip.yeee.memo.demo.design.pattern.behavior;
 
 import cn.hutool.core.collection.CollectionUtil;
+import jakarta.annotation.Resource;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Map;
 
 /**

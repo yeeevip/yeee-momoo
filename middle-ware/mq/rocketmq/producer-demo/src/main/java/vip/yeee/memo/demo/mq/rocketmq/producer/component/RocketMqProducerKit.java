@@ -11,7 +11,7 @@ import vip.yeee.memo.demo.mq.rocketmq.producer.model.MQConstant;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * RocketMQ Template

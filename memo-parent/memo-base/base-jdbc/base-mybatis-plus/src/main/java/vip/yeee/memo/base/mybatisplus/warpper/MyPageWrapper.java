@@ -144,7 +144,7 @@ public class MyPageWrapper<T> {
                         List<String> valArr = (List<String>) val;
                         wrapper.between(column, getStartDateTime(valArr.get(0)), getEndDateTime(valArr.get(1)));
                     } else {
-                        String[] vals = StrUtil.split(String.valueOf(val), StringPool.COMMA);
+                        String[] vals = StrUtil.splitToArray(String.valueOf(val), StringPool.COMMA);
                         if (vals.length != 2) {
                             throw new IllegalArgumentException("between mode param value length not equal 2");
                         }

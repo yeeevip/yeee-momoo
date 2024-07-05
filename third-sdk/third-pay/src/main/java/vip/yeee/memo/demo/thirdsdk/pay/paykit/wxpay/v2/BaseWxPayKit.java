@@ -13,6 +13,8 @@ import com.github.binarywang.wxpay.bean.result.WxPayOrderCloseResult;
 import com.github.binarywang.wxpay.bean.result.WxPayOrderQueryResult;
 import com.github.binarywang.wxpay.bean.result.WxPayRefundResult;
 import com.github.binarywang.wxpay.constant.WxPayConstants;
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
 import vip.yeee.memo.base.model.exception.BizException;
@@ -23,8 +25,6 @@ import vip.yeee.memo.demo.thirdsdk.pay.paykit.PayContext;
 import vip.yeee.memo.demo.thirdsdk.pay.paykit.PayKit;
 import vip.yeee.memo.demo.thirdsdk.pay.properties.PayProperties;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * description......

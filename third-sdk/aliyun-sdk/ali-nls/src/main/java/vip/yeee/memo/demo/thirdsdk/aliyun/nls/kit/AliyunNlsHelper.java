@@ -1,5 +1,7 @@
 package vip.yeee.memo.demo.thirdsdk.aliyun.nls.kit;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RPermitExpirableSemaphore;
 import org.redisson.api.RedissonClient;
@@ -7,8 +9,6 @@ import org.springframework.stereotype.Component;
 import vip.yeee.memo.demo.thirdsdk.aliyun.nls.bo.AudioGenBo;
 import vip.yeee.memo.demo.thirdsdk.aliyun.nls.properties.GenNewsAudioConfig;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

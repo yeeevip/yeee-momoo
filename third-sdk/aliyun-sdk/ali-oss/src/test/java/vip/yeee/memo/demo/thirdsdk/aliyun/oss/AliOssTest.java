@@ -4,12 +4,12 @@ import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.system.SystemUtil;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import vip.yeee.memo.common.oss.kit.AliOssKit;
 
-import javax.annotation.Resource;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.ZoneId;

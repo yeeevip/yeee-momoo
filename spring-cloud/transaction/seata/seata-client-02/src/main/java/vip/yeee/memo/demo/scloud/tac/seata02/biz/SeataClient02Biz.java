@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import vip.yeee.memo.demo.scloud.tac.seata02.domain.mysql.entity.TestEntity;
 import vip.yeee.memo.demo.scloud.tac.seata02.domain.mysql.service.TestEntityService;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Date;
 
 /**

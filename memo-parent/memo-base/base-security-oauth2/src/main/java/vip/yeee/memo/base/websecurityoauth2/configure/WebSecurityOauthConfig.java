@@ -2,12 +2,13 @@ package vip.yeee.memo.base.websecurityoauth2.configure;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
 import vip.yeee.memo.base.websecurityoauth2.constant.AuthConstant;
 
 /**
@@ -18,9 +19,9 @@ import vip.yeee.memo.base.websecurityoauth2.constant.AuthConstant;
  */
 //@Order(Integer.MIN_VALUE)
 @Configuration
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableMethodSecurity(prePostEnabled = true)
 @EnableWebSecurity
-public class WebSecurityOauthConfig extends WebSecurityConfigurerAdapter {
+public class WebSecurityOauthConfig {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -28,26 +29,28 @@ public class WebSecurityOauthConfig extends WebSecurityConfigurerAdapter {
         return new Md5PasswordEncoder();
     }
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-            http.csrf().disable()
-                    .authorizeRequests()
-                    .antMatchers(AuthConstant.BASE_EXCLUDE_PATTERNS)
-                    .permitAll()
-                    .anyRequest()
-                    .authenticated()
-        ;
-    }
-
-//    @Override
-//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//        super.configure(auth);
-//    }
-
-    // AuthenticationManager对象在OAuth2认证服务中要使用，提取放入IOC容器中
-    @Override
     @Bean
-    public AuthenticationManager authenticationManagerBean() throws Exception {
-        return super.authenticationManagerBean();
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+            http
+                    // 禁用basic明文验证
+                    .httpBasic().disable()
+                    // 前后端分离架构不需要csrf保护
+                    .csrf().disable()
+                    // 禁用默认登录页
+                    .formLogin().disable()
+                    // 禁用默认登出页
+                    .logout().disable()
+                    // 前后端分离是无状态的，不需要session了，直接禁用。
+                    .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                    .authorizeHttpRequests(authorizeHttpRequests -> authorizeHttpRequests
+                            // 允许所有OPTIONS请求
+                            .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+                            // 匿名访问
+                            .requestMatchers(AuthConstant.BASE_EXCLUDE_PATTERNS).permitAll()
+                            // 允许任意请求被已登录用户访问，不检查Authority
+                            .anyRequest().authenticated())
+                    ;
+            return http.build();
     }
+
 }

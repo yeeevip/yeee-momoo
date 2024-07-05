@@ -2,6 +2,7 @@ package vip.yeee.memo.demo.thirdsdk.aliyun.nls;
 
 import cn.hutool.system.SystemUtil;
 import com.google.common.base.Stopwatch;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,7 +10,6 @@ import vip.yeee.memo.base.util.TextUtils;
 import vip.yeee.memo.demo.thirdsdk.aliyun.nls.kit.AliyunNlsHelper;
 import vip.yeee.memo.demo.thirdsdk.aliyun.nls.bo.AudioGenBo;
 
-import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
 /**

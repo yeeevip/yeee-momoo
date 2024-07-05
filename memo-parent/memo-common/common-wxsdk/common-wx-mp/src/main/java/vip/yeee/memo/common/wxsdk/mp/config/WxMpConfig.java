@@ -1,5 +1,6 @@
 package vip.yeee.memo.common.wxsdk.mp.config;
 
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.api.WxConsts;
 import me.chanjar.weixin.common.error.WxErrorException;
@@ -23,8 +24,6 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 import vip.yeee.memo.common.wxsdk.mp.properties.WxMpProperties;
 import vip.yeee.memo.common.wxsdk.mp.service.IWxMpConfigService;
-
-import javax.annotation.Resource;
 
 import java.util.HashSet;
 import java.util.Map;

@@ -6,7 +6,7 @@ import vip.yeee.memo.demo.mybatisencrypt.dto.UserDTO;
 import vip.yeee.memo.demo.mybatisencrypt.mapper.UserMapper;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

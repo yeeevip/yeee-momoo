@@ -20,7 +20,7 @@ import vip.yeee.memo.common.domain.entity.front.User;
 import vip.yeee.memo.common.domain.mapper.front.UserMapper;
 import vip.yeee.memo.demo.springcloud.apiauth.server.model.request.UserLoginRequest;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.Map;
 
 /**

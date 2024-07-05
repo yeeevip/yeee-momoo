@@ -1,5 +1,6 @@
 package vip.yeee.memo.common.scloud.gray.common.handle;
 
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.cloud.client.ServiceInstance;
@@ -59,7 +60,7 @@ public class GrayLoadBalancer implements ReactorServiceInstanceLoadBalancer {
                                                               List<ServiceInstance> serviceInstances, HttpHeaders headers) {
         String apiVersion = headers.getFirst(CloudGrayConstant.API_VERSION_HEADER);
         if (!StringUtils.hasText(apiVersion)) {
-            javax.servlet.http.HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+            HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
             apiVersion = request.getHeader(CloudGrayConstant.API_VERSION_HEADER);
         }
         Map<String,String> grayTagMap = new HashMap<>();

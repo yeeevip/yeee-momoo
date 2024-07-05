@@ -1,5 +1,6 @@
 package vip.yeee.memo.demo.stools.export.easyexcel.controller;
 
+import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -9,7 +10,6 @@ import vip.yeee.memo.demo.stools.export.easyexcel.biz.DemoBiz;
 import vip.yeee.memo.demo.stools.export.easyexcel.model.vo.ImportDataVo;
 import vip.yeee.memo.base.model.rest.CommonResult;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 @RestController

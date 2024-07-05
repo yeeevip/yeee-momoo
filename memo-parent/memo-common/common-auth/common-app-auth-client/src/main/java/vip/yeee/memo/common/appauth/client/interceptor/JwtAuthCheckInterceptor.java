@@ -2,6 +2,9 @@ package vip.yeee.memo.common.appauth.client.interceptor;
 
 import cn.hutool.core.util.StrUtil;
 import io.jsonwebtoken.Claims;
+import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.stereotype.Component;
@@ -20,9 +23,6 @@ import vip.yeee.memo.common.appauth.client.kit.JwtClientKit;
 import vip.yeee.memo.base.util.JacksonUtils;
 import vip.yeee.memo.common.appauth.client.properties.ApiAuthClientProperties;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * description......

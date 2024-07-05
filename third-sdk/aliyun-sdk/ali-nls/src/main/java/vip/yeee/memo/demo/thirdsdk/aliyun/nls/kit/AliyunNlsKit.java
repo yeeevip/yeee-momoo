@@ -10,13 +10,13 @@ import com.alibaba.nls.client.protocol.SampleRateEnum;
 import com.alibaba.nls.client.protocol.tts.SpeechSynthesizer;
 import com.alibaba.nls.client.protocol.tts.SpeechSynthesizerListener;
 import com.alibaba.nls.client.protocol.tts.SpeechSynthesizerResponse;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 import vip.yeee.memo.demo.thirdsdk.aliyun.nls.properties.AliyunNlsProperties;
 
-import javax.annotation.Resource;
 import java.io.*;
 import java.nio.ByteBuffer;
 import java.time.Instant;

@@ -1,5 +1,6 @@
 package vip.yeee.memo.base.swagger.config;
 
+import jakarta.annotation.Resource;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -13,7 +14,6 @@ import springfox.documentation.spring.web.plugins.WebFluxRequestHandlerProvider;
 import springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-import javax.annotation.Resource;
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.stream.Collectors;

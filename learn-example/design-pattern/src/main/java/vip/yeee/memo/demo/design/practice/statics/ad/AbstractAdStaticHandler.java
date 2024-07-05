@@ -10,7 +10,7 @@ import vip.yeee.memo.demo.design.practice.statics.base.AbstractStaticHandler;
 import vip.yeee.memo.demo.design.practice.statics.vo.StaticAdVo;
 import vip.yeee.memo.demo.design.practice.statics.vo.StaticDataVo;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 import java.util.Optional;
 import java.util.TreeMap;

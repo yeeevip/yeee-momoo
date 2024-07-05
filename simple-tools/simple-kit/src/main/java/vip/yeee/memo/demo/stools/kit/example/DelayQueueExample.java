@@ -1,12 +1,12 @@
 package vip.yeee.memo.demo.stools.kit.example;
 
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 import vip.yeee.memo.demo.stools.kit.service.DelayQueueService;
 
-import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
 /**

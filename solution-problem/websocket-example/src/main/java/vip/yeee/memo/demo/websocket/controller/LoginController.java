@@ -1,6 +1,6 @@
 package vip.yeee.memo.demo.websocket.controller;
 
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +19,7 @@ public class LoginController {
 	LoginService loginservice;
 	
 	@RequestMapping("/loginvalidate")
-	public String loginvalidate(@RequestParam("username") String username,@RequestParam("password") String pwd,HttpSession httpSession){
+	public String loginvalidate(@RequestParam("username") String username, @RequestParam("password") String pwd, HttpSession httpSession){
 		if(username==null)
 			return "login";
 		String realpwd=loginservice.getpwdbyname(username);

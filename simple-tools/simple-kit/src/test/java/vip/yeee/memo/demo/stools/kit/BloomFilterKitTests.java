@@ -1,13 +1,13 @@
 package vip.yeee.memo.demo.stools.kit;
 
 import com.google.common.collect.Lists;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.test.context.SpringBootTest;
 import vip.yeee.memo.common.redisson.kit.BloomFilterKit;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.UUID;
 

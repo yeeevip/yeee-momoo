@@ -11,6 +11,8 @@ import com.aliyuncs.http.MethodType;
 import com.aliyuncs.http.ProtocolType;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
@@ -21,8 +23,6 @@ import vip.yeee.memo.common.oss.model.StsAuthInfo;
 import vip.yeee.memo.common.oss.constant.OssConstant;
 import vip.yeee.memo.common.oss.properties.AliOssProperties;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;

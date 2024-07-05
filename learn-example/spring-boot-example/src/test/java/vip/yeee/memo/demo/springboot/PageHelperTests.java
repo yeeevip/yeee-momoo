@@ -10,7 +10,7 @@ import vip.yeee.memo.demo.springboot.domain.mysql.mapper.SysUserMapper;
 import vip.yeee.memo.demo.springboot.domain.sqlserver.entity.SqlServerTestA;
 import vip.yeee.memo.demo.springboot.domain.sqlserver.mapper.SqlServerTestAMapper;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 

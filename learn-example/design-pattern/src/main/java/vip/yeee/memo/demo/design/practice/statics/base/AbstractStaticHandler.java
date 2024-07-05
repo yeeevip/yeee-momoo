@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import vip.yeee.memo.demo.design.practice.statics.temp.TempService;
 import vip.yeee.memo.demo.design.practice.statics.vo.*;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;

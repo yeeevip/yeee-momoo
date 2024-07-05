@@ -1,5 +1,6 @@
 package vip.yeee.memo.common.encrypt.mybatis.config;
 
+import jakarta.annotation.Resource;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,8 +9,6 @@ import vip.yeee.memo.common.encrypt.mybatis.encrypt.AesSupport;
 import vip.yeee.memo.common.encrypt.mybatis.interceptor.DecryptReadInterceptor;
 import vip.yeee.memo.common.encrypt.mybatis.interceptor.SensitiveAndEncryptWriteInterceptor;
 import vip.yeee.memo.common.encrypt.mybatis.properties.MybatisEncryptProperty;
-
-import javax.annotation.Resource;
 
 /**
  * 插件配置

@@ -1,14 +1,13 @@
 package vip.yeee.memo.demo.stools.kit;
 
 import cn.hutool.core.thread.ThreadUtil;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.redisson.api.RRateLimiter;
 import org.springframework.boot.test.context.SpringBootTest;
 import vip.yeee.memo.common.redisson.kit.RateLimiterKit;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 
 /**
  * description......

@@ -1,9 +1,9 @@
 package vip.yeee.memo.demo.thirdsdk.pay.model.vo.req;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import vip.yeee.memo.demo.thirdsdk.pay.constant.PayConstant;
 
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 

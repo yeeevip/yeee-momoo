@@ -8,7 +8,7 @@ import vip.yeee.memo.base.model.annotation.AnonymousAccess;
 import vip.yeee.memo.base.model.rest.CommonResult;
 import vip.yeee.memo.demo.springcloud.webresource.server2.biz.WebResourcesServer2Biz;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * description......

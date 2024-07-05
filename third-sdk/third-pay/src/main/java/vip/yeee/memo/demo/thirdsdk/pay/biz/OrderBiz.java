@@ -23,7 +23,7 @@ import vip.yeee.memo.demo.thirdsdk.pay.utils.SeqUtil;
 import vip.yeee.memo.demo.thirdsdk.pay.model.vo.resp.CheckPayStateResVO;
 import vip.yeee.memo.demo.thirdsdk.pay.model.vo.resp.SubmitOrderRespVO;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;

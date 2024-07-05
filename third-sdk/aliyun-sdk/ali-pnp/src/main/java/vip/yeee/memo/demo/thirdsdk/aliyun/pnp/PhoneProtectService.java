@@ -13,13 +13,13 @@ import com.aliyuncs.dyplsapi.model.v20170525.UnbindSubscriptionResponse;
 import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import vip.yeee.memo.base.model.exception.BizException;
 import vip.yeee.memo.base.redis.utils.RedisUtil;
 
-import javax.annotation.Resource;
 import java.util.Date;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;

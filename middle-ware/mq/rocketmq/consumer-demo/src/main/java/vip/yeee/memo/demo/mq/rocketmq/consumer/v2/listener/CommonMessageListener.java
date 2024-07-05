@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import vip.yeee.memo.demo.mq.rocketmq.consumer.v1.config.MqConfig;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * description......

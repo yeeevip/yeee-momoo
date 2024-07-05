@@ -8,7 +8,6 @@ import feign.codec.Decoder;
 import feign.codec.ErrorDecoder;
 import feign.optionals.OptionalDecoder;
 import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
-import lombok.var;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;

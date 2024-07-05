@@ -2,6 +2,8 @@ package vip.yeee.memo.common.platformauth.client.interceptor;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -15,8 +17,6 @@ import vip.yeee.memo.base.websecurityoauth2.constant.AuthConstant;
 import vip.yeee.memo.base.websecurityoauth2.context.SecurityContext;
 import vip.yeee.memo.base.websecurityoauth2.model.AuthedUser;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;

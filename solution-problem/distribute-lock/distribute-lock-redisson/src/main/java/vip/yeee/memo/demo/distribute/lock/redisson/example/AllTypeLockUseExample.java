@@ -1,11 +1,11 @@
 package vip.yeee.memo.demo.distribute.lock.redisson.example;
 
+import jakarta.annotation.Resource;
 import org.redisson.RedissonMultiLock;
 import org.redisson.RedissonRedLock;
 import org.redisson.api.*;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-import javax.annotation.Resource;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 

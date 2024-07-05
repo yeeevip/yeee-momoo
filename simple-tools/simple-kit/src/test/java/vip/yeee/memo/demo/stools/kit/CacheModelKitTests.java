@@ -1,6 +1,7 @@
 package vip.yeee.memo.demo.stools.kit;
 
 import com.google.common.collect.Maps;
+import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,6 @@ import org.redisson.api.RSet;
 import org.springframework.boot.test.context.SpringBootTest;
 import vip.yeee.memo.common.redisson.kit.CacheModelKit;
 
-import javax.annotation.Resource;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;

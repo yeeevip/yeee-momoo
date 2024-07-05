@@ -15,7 +15,7 @@ import vip.yeee.memo.base.model.rest.CommonResult;
 import vip.yeee.memo.base.model.vo.PageVO;
 import org.springframework.security.access.prepost.PreAuthorize;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 
 /**

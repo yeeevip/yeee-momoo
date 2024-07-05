@@ -3,8 +3,8 @@ package vip.yeee.memo.common.platformauth.client.utils;
 import cn.hutool.core.io.IoUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import jakarta.servlet.http.HttpServletResponse;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 

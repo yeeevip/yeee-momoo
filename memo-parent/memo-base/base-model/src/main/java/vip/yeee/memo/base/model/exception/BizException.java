@@ -12,8 +12,6 @@ import vip.yeee.memo.base.model.rest.IErrorCode;
 @Data
 public class BizException extends RuntimeException {
 
-    private static final long serialVersionUID = 1L;
-
     /**
      * 错误码
      */

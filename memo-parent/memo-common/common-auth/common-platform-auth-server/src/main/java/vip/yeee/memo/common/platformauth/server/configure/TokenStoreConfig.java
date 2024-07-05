@@ -3,6 +3,7 @@ package vip.yeee.memo.common.platformauth.server.configure;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import jakarta.annotation.Resource;
 import org.springframework.beans.BeanUtils;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
@@ -25,7 +26,6 @@ import vip.yeee.memo.base.websecurityoauth2.constant.AuthConstant;
 import vip.yeee.memo.base.websecurityoauth2.model.UserInfo;
 import vip.yeee.memo.common.platformauth.server.properties.AuthTokenStoreProperties;
 
-import javax.annotation.Resource;
 import javax.crypto.spec.SecretKeySpec;
 import javax.sql.DataSource;
 import javax.xml.bind.DatatypeConverter;

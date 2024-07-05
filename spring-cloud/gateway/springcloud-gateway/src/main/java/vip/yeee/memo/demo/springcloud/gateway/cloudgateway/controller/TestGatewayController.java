@@ -1,11 +1,10 @@
 package vip.yeee.memo.demo.springcloud.gateway.cloudgateway.controller;
 
+import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import vip.yeee.memo.base.model.rest.CommonResult;
 import vip.yeee.memo.demo.springcloud.gateway.cloudgateway.component.TestBiz;
-
-import javax.annotation.Resource;
 
 /**
  * description......

@@ -1,11 +1,19 @@
 package vip.yeee.memo.base.web.utils;
 
+import cn.hutool.core.io.IORuntimeException;
+import cn.hutool.core.io.IoUtil;
+import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.extra.servlet.ServletUtil;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpHeaders;
 
-import javax.servlet.http.HttpServletRequest;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
@@ -123,5 +131,21 @@ public class HttpRequestUtils {
             basePath.append(":").append(port);
         }
         return basePath.toString();
+    }
+
+    public static String getBody(HttpServletRequest request) {
+        try (final BufferedReader reader = request.getReader()) {
+            return IoUtil.read(reader);
+        } catch (IOException e) {
+            throw new IORuntimeException(e);
+        }
+    }
+
+    public static Map<String, String> getParamMap(ServletRequest request) {
+        Map<String, String> params = new HashMap<>();
+        for (Map.Entry<String, String[]> entry : Collections.unmodifiableMap(request.getParameterMap()).entrySet()) {
+            params.put(entry.getKey(), ArrayUtil.join(entry.getValue(), StrUtil.COMMA));
+        }
+        return params;
     }
 }

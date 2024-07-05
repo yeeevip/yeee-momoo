@@ -1,10 +1,10 @@
 package vip.yeee.memo.base.web.utils;
 
 import cn.hutool.core.collection.CollectionUtil;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validator;
 import vip.yeee.memo.base.model.exception.BizException;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validator;
 import java.util.List;
 import java.util.Set;
 

@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import vip.yeee.memo.common.web.filter.FilterDemo;
 import vip.yeee.memo.common.web.interceptor.InterceptorDemo;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Collections;
 

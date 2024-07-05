@@ -8,7 +8,7 @@ import vip.yeee.memo.demo.scloud.tac.seata03.feign.SeataClient02FeignClient;
 import vip.yeee.memo.demo.scloud.tac.seata03.feign.SeataClient01FeignClient;
 import vip.yeee.memo.demo.scloud.tac.seata03.feign.SeataClientPgSQLFeignClient;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * description......

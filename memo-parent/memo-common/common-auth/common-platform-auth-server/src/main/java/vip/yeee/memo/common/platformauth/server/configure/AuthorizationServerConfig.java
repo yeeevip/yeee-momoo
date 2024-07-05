@@ -1,5 +1,6 @@
 package vip.yeee.memo.common.platformauth.server.configure;
 
+import jakarta.annotation.Resource;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,7 +21,6 @@ import org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint;
 import org.springframework.security.oauth2.provider.token.*;
 import vip.yeee.memo.common.platformauth.server.constant.SecurityConstants;
 
-import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.util.LinkedHashMap;
 import java.util.Map;

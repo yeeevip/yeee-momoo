@@ -1,16 +1,21 @@
 package vip.yeee.memo.demo.simpletool.my;
 
+import cn.hutool.core.io.IORuntimeException;
+import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.extra.servlet.ServletUtil;
 import cn.hutool.http.HttpRequest;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.parser.Feature;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import vip.yeee.memo.base.web.utils.HttpRequestUtils;
 
-import javax.servlet.http.HttpServletRequest;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.LinkedHashMap;
 
 /**
@@ -32,8 +37,8 @@ public class SpringmvcServiceForward {
         if(StrUtil.isBlank(url)) return null;
         String res;
         HttpRequest req = HttpRequest.get(url).header("linkTicket", request.getHeader("linkTicket")).form(reqParam);
-        if(!ServletUtil.isGetMethod(request)) {
-            req.body(ServletUtil.getBody(request));
+        if(!"GET".equalsIgnoreCase(request.getMethod())) {
+            req.body(HttpRequestUtils.getBody(request));
         }
         res = req.execute().body();
         log.info("channel中转，url = {}，params = {}, res = {}", url, reqParam, res);

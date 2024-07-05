@@ -6,6 +6,7 @@ import com.nimbusds.jose.crypto.MACVerifier;
 import com.nimbusds.jose.crypto.RSASSAVerifier;
 import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -16,7 +17,6 @@ import vip.yeee.memo.common.appauth.client.model.dto.PayloadDto;
 import vip.yeee.memo.common.appauth.client.properties.ApiAuthClientProperties;
 import vip.yeee.memo.base.util.JacksonUtils;
 
-import javax.annotation.Resource;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.Date;
