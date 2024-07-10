@@ -16,7 +16,7 @@
 		<!-- 中间件的使用 -->
 <!--		<module>middle-ware</module>-->
 		<!-- 微服务 -->
-<!--		<module>spring-cloud</module>-->
+		<module>spring-cloud</module>
 		<!-- 三方SDK -->
 <!--		<module>third-sdk</module>-->
 		<!-- 小工具 -->
