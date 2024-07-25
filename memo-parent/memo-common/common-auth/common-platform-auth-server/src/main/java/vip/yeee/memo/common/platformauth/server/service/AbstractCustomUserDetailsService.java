@@ -16,10 +16,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.oauth2.client.resource.OAuth2ProtectedResourceDetails;
-import org.springframework.security.oauth2.common.OAuth2AccessToken;
-import org.springframework.security.oauth2.provider.OAuth2Authentication;
-import org.springframework.security.oauth2.provider.token.TokenStore;
+import org.springframework.security.oauth2.core.OAuth2AccessToken;
 import vip.yeee.memo.base.model.exception.BizException;
 import vip.yeee.memo.base.util.LogUtils;
 import vip.yeee.memo.base.websecurityoauth2.constant.AuthConstant;
@@ -135,15 +132,7 @@ public abstract class AbstractCustomUserDetailsService implements UserDetailsSer
     }
 
     public void logout(Authentication authentication) {
-        OAuth2AccessToken accessToken = tokenStore.getAccessToken((OAuth2Authentication) authentication);
-        if (accessToken != null) {
-            // 移除access_token
-            tokenStore.removeAccessToken(accessToken);
-            // 移除refresh_token
-            if (accessToken.getRefreshToken() != null) {
-                tokenStore.removeRefreshToken(accessToken.getRefreshToken());
-            }
-        }
+
     }
 
 }

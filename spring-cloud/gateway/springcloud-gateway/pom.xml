@@ -27,8 +27,9 @@
             <artifactId>base-config</artifactId>
         </dependency>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
-            <artifactId>base-swagger</artifactId>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-gateway-spring-boot-starter</artifactId>
+            <version>4.3.0</version>
         </dependency>
         <dependency>
             <groupId>vip.yeee.memo</groupId>
@@ -37,6 +38,11 @@
         <dependency>
             <groupId>vip.yeee.memo</groupId>
             <artifactId>common-app-auth-client</artifactId>
+        </dependency>
+        <!--监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>vip.yeee.memo</groupId>

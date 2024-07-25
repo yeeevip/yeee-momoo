@@ -15,7 +15,7 @@
     <artifactId>base-swagger</artifactId>
 
     <properties>
-        <knife4j.version>3.0.3</knife4j.version>
+        <knife4j.version>4.3.0</knife4j.version>
     </properties>
 
     <dependencies>
@@ -25,14 +25,10 @@
             <optional>true</optional>
         </dependency>
         <!--Knife4j API文档生产工具-->
+        <!--swagger3-->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-micro-spring-boot-starter</artifactId>
-            <version>${knife4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
             <version>${knife4j.version}</version>
         </dependency>
     </dependencies>
