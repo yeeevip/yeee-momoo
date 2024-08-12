@@ -23,10 +23,6 @@
         </dependency>
         <dependency>
             <groupId>vip.yeee.memo</groupId>
-            <artifactId>base-security-oauth2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>vip.yeee.memo</groupId>
             <artifactId>common-httpclient-okhttp</artifactId>
         </dependency>
         <dependency>
