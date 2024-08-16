@@ -3,7 +3,7 @@ package vip.yeee.memo.demo.thirdsdk.pay.model.vo.req;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * description......

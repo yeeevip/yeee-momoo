@@ -1,5 +1,6 @@
 package vip.yeee.memo.demo.thirdsdk.pay.controller;
 
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 import vip.yeee.memo.base.model.rest.CommonResult;
 import vip.yeee.memo.demo.thirdsdk.pay.model.bo.ChannelRetMsgBO;
@@ -10,7 +11,6 @@ import vip.yeee.memo.demo.thirdsdk.pay.model.vo.req.UnifiedOrderReqVO;
 import vip.yeee.memo.demo.thirdsdk.pay.service.UnifiedPayOrderService;
 
 import jakarta.annotation.Resource;
-import javax.validation.Valid;
 
 /**
  * description......

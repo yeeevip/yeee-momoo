@@ -2,7 +2,7 @@ package vip.yeee.memo.demo.thirdsdk.pay.model.vo.req;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 /**
