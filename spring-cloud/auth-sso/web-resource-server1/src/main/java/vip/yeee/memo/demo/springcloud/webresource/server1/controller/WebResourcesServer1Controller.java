@@ -1,7 +1,7 @@
 package vip.yeee.memo.demo.springcloud.webresource.server1.controller;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +17,7 @@ import jakarta.annotation.Resource;
  * @author https://www.yeee.vip
  * @since 2022/11/16 17:33
  */
-@Api("资源1服务")
+@Tag(name = "资源1服务")
 @RestController
 public class WebResourcesServer1Controller {
 
@@ -26,7 +26,7 @@ public class WebResourcesServer1Controller {
 
     @PreAuthorize("hasAuthority('yeee:test:aaa')")
 //    @PreAuthorize("hasAuthority('yeee:test:aaab')")
-    @ApiOperation("资源API接口")
+    @Operation(description = "资源API接口")
     @GetMapping("resources/api")
     public CommonResult<String> accessApi() {
         return CommonResult.success(webResourcesServer1Biz.accessApi());

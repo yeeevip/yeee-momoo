@@ -112,6 +112,11 @@
             </dependency>
             <dependency>
                 <groupId>vip.yeee.memo</groupId>
+                <artifactId>base-security-oauth2</artifactId>
+                <version>${yeee-memo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>vip.yeee.memo</groupId>
                 <artifactId>common-web</artifactId>
                 <version>${yeee-memo.version}</version>
             </dependency>

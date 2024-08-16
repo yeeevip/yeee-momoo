@@ -16,7 +16,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.oauth2.core.OAuth2AccessToken;
 import vip.yeee.memo.base.model.exception.BizException;
 import vip.yeee.memo.base.util.LogUtils;
 import vip.yeee.memo.base.websecurityoauth2.constant.AuthConstant;
@@ -38,10 +37,8 @@ public abstract class AbstractCustomUserDetailsService implements UserDetailsSer
 
     private final static Logger log = LogUtils.commonAuthLog();
 
-    @Resource
-    private TokenStore tokenStore;
-    @Resource
-    private OAuth2ProtectedResourceDetails resourceOwnerPasswordResourceDetails;
+//    @Resource
+//    private OAuth2ProtectedResourceDetails resourceOwnerPasswordResourceDetails;
     @Resource
     private ServerProperties serverProperties;
 
@@ -100,9 +97,9 @@ public abstract class AbstractCustomUserDetailsService implements UserDetailsSer
         }
         try {
             Map<String, Object> params = Maps.newHashMap();
-            params.put(AuthConstant.AUTH_CLIENT_ID, resourceOwnerPasswordResourceDetails.getClientId());
-            params.put(AuthConstant.AUTH_CLIENT_SECRET, resourceOwnerPasswordResourceDetails.getClientSecret());
-            params.put(AuthConstant.AUTH_GRANT_TYPE, resourceOwnerPasswordResourceDetails.getGrantType());
+//            params.put(AuthConstant.AUTH_CLIENT_ID, resourceOwnerPasswordResourceDetails.getClientId());
+//            params.put(AuthConstant.AUTH_CLIENT_SECRET, resourceOwnerPasswordResourceDetails.getClientSecret());
+//            params.put(AuthConstant.AUTH_GRANT_TYPE, resourceOwnerPasswordResourceDetails.getGrantType());
             params.put(AuthConstant.AUTH_USERNAME, userType + AuthConstant.USERNAME_SEPARATOR + username);
             params.put(AuthConstant.AUTH_PASSWORD, password);
             String contextPath = serverProperties.getServlet().getContextPath();

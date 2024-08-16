@@ -31,6 +31,7 @@
         └── base-tk-mapper
     ├── base-model ------------------------------ 基础模型，包含公共的VO、异常类、注解类
     ├── base-redis -- 
+    ├── base-security-oauth2 -------------------- 认证授权基础，公共配置、依赖、常亮等
     ├── base-swagger ---------------------------- 基于knife4j的swagger文档框架，只需要引入依赖添加配置即可使用
     ├── base-util ------------------------------- 工具类，如hutool、json工具、guava等
     ├── base-web -------------------------------- 基础web模块，引入web项目必须的springboot-web-starter、校验、监控等
@@ -56,9 +57,6 @@
             ├── common-springcloud-gray-gateway - springcloud-gateway灰度发布依赖
             └── common-springcloud-gray-inner --- springcloud内部服务灰度发布依赖
         └── common-springcloud-openfeign
-    ├── common-sso ------------------------------ 单点登录
-        ├── common-sso-inner-app 
-        └── common-sso-third-app
     ├── common-web ------------------------------ 通用web模块，在base-web基础上加入jdbc、swagger等，较完整的web-starter
     ├── common-websocket ------------------------ websocket 
     ├── common-websse --------------------------- websse

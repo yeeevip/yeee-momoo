@@ -20,6 +20,7 @@
         <module>base-swagger</module>
         <module>base-jdbc</module>
         <module>base-redis</module>
+        <module>base-security-oauth2</module>
     </modules>
 
     <build>
