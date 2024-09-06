@@ -1,3 +1,10 @@
 jasypt:
   encryptor:
-    password: yeee
+    password: cloud-jasypt
+    # 加密算法 jasypt3.0后，默认算法为 PBEWITHHMACSHA512ANDAES_256，需要JDK9以上或者 添加JCE(Java Cryptography Extension 无限强度权限策略文件)支持
+    algorithm: PBEWITHHMACSHA512ANDAES_256
+    iv-generator-classname: org.jasypt.iv.RandomIvGenerator
+    property:
+      # 算法识别的前后缀，默认ENC()，包含在前后缀的加密信息，会使用指定算法解密
+      prefix: ENC(
+      suffix: )
