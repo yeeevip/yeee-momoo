@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>memoo-parent</artifactId>
+        <groupId>vip.yeee.memoo</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>memoo-common</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>common-domain</module>
+        <module>common-auth</module>
+        <module>common-springcloud</module>
+        <module>common-web</module>
+        <module>common-mybatis-encrypt</module>
+        <module>common-httpclient</module>
+        <module>common-websse</module>
+        <module>common-websocket</module>
+        <module>common-wxsdk</module>
+        <module>common-oss</module>
+        <module>common-dingtalk</module>
+        <module>common-kit</module>
+        <module>common-workflow</module>
+        <module>common-tokenizing</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

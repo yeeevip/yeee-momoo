@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>middle-ware</artifactId>
-    <groupId>vip.yeee.memo</groupId>
-    <version>4.0.0-SNAPSHOT</version>
+    <groupId>vip.yeee.memoo</groupId>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>

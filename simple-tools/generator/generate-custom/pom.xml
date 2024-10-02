@@ -6,8 +6,8 @@
 
     <parent>
         <artifactId>generator</artifactId>
-        <groupId>vip.yeee.memo</groupId>
-        <version>4.0.0-SNAPSHOT</version>
+        <groupId>vip.yeee.memoo</groupId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>generate-custom</artifactId>
@@ -19,19 +19,19 @@
             <version>1.3.7</version>
         </dependency>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>base-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>base-tk-mapper</artifactId>
         </dependency>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>base-mybatis-plus</artifactId>
         </dependency>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>base-model</artifactId>
         </dependency>
         <dependency>

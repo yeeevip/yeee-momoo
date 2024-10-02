@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>memo-parent</artifactId>
-        <groupId>vip.yeee.memo</groupId>
-        <version>4.0.0-SNAPSHOT</version>
+        <artifactId>memoo-parent</artifactId>
+        <groupId>vip.yeee.memoo</groupId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath/>
     </parent>
 
@@ -15,15 +15,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>common-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>common-springcloud-dependencies</artifactId>
         </dependency>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>common-springcloud-openfeign</artifactId>
         </dependency>
         <dependency>

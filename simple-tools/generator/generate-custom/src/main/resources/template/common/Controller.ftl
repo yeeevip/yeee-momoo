@@ -11,8 +11,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import vip.yeee.memo.base.model.rest.CommonResult;
-import vip.yeee.memo.base.model.vo.PageVO;
+import vip.yeee.memoo.base.model.rest.CommonResult;
+import vip.yeee.memoo.base.model.vo.PageVO;
 import org.springframework.security.access.prepost.PreAuthorize;
 
 import jakarta.annotation.Resource;

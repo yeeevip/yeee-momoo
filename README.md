@@ -15,15 +15,15 @@
 ## 模块说明
 
 ---------------------------------
-- 脚手架核心通用模块**memo-parent**，按功能抽取出来封装为通用的**starter**
+- 脚手架核心通用模块**memoo-parent**，按功能抽取出来封装为通用的**starter**
 ---------------------------------
 
 ```lua
-├ memo-parent
+├ memoo-parent
 ├
-├── memo-dependencies --------------------------- Maven依赖版本统一管理
+├── memoo-dependencies --------------------------- Maven依赖版本统一管理
 ├
-├── memo-base ----------------------------------- 基础抽象模块
+├── memoo-base ----------------------------------- 基础抽象模块
     ├── base-config
     ├── base-jdbc
         ├── base-mybatis  
@@ -36,7 +36,7 @@
     ├── base-util ------------------------------- 工具类，如hutool、json工具、guava等
     ├── base-web -------------------------------- 基础web模块，引入web项目必须的springboot-web-starter、校验、监控等
 ├    
-└── memo-common --------------------------------- 在memo-base的基础上封装的*通用模块*
+└── memoo-common --------------------------------- 在memo-base的基础上封装的*通用模块*
     ├── common-auth 
         ├── common-app-auth-client -------------- C端应用鉴权客户端
         ├── common-app-auth-server -------------- C端应用鉴权服务端
@@ -112,11 +112,11 @@
 
 ### 快速搭建基于Netty的Websocket应用程序
 
-1. 下载yeee-memo工程，打包构建JavaWeb通用脚手架**memo-parent**
+1. 下载yeee-memo工程，打包构建JavaWeb通用脚手架**memoo-parent**
 
 ```
-git clone https://github.com/yeeevip/yeee-memo.git
-cd memo-parent && mvn clean install
+git clone https://github.com/yeeevip/yeee-memoo.git
+cd memoo-parent && mvn clean install
 ```
 
 2. pom文件引入**common-netty-websocket**通用依赖
@@ -127,20 +127,20 @@ cd memo-parent && mvn clean install
     <modelVersion>4.0.0</modelVersion>
     <!-- yeee-memo脚手架 -->
     <parent>
-        <artifactId>memo-parent</artifactId>
-        <groupId>vip.yeee.memo</groupId>
-        <version>4.0.0-SNAPSHOT</version>
+        <artifactId>memoo-parent</artifactId>
+        <groupId>vip.yeee.memoo</groupId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath/>
     </parent>
     <artifactId>api-auth-server</artifactId>
     <dependencies>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>common-web</artifactId>
         </dependency>
         <!-- [netty-websocket]通用依赖 -->
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>common-netty-websocket</artifactId>
         </dependency>
     </dependencies>
@@ -181,11 +181,11 @@ public class MyWebSocket {
 
 ### 基于memo脚手架快速搭建Spring+Security+Oauth2的认证/授权服务器
 
-1. 下载yeee-memo工程，打包构建JavaWeb通用脚手架**memo-parent**
+1. 下载yeee-memo工程，打包构建JavaWeb通用脚手架**memoo-parent**
 
 ```
-git clone https://github.com/yeeevip/yeee-memo.git
-cd memo-parent && mvn clean install
+git clone https://github.com/yeeevip/yeee-memoo.git
+cd memoo-parent && mvn clean install
 ```
 
 2. 使用IDEA新建maven工程web-auth-server，pom文件引入**common-platform-auth**通用依赖
@@ -196,25 +196,25 @@ cd memo-parent && mvn clean install
     <modelVersion>4.0.0</modelVersion>
     <!-- yeee-memo脚手架 -->
     <parent>
-        <artifactId>memo-parent</artifactId>
-        <groupId>vip.yeee.memo</groupId>
-        <version>4.0.0-SNAPSHOT</version>
+        <artifactId>memoo-parent</artifactId>
+        <groupId>vip.yeee.memoo</groupId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath/>
     </parent>
     <artifactId>api-auth-server</artifactId>
     <dependencies>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>common-web</artifactId>
         </dependency>
         <!-- [授权/认证服务器]通用依赖 -->
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>common-platform-auth-server</artifactId>
         </dependency>
         <!-- [资源客户端]通用依赖 -->
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>common-platform-auth-client</artifactId>
         </dependency>
     </dependencies>
@@ -264,7 +264,7 @@ yeee:
 
 5. 最后一个web认证服务器就搭建好了
 
-- 完整代码请参考：[web-auth-server](https://gitee.com/yeeevip/yeee-memo/tree/master/spring-cloud/auth-sso/web-auth-server)
+- 完整代码请参考：[web-auth-server](https://gitee.com/yeeevip/yeee-memoo/tree/master/spring-cloud/auth-sso/web-auth-server)
 
 ## 技术交流群
 
@@ -273,6 +273,6 @@ yeee:
 
 | 微信群                                     | QQ群                                                                                | 技术接单群                                                                           |
 |-----------------------------------------|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| ![作者微信](doc/images/yeee_wp.jpg)  | ![](doc/images/yeee-memo-qq.jpg)                                               | ![](doc/images/yeee_wx.jpg)
+| ![作者微信](doc/images/yeee_wp.jpg)  | ![](doc/images/yeee-memoo-qq.jpg)                                               | ![](doc/images/yeee_wx.jpg)
 | 回复：加群，邀您加入群聊                   | <a href="https://qm.qq.com/q/oLSCm1Ksjm" target="_blank">点击加入QQ群：96305921</a>  |java、vue、微信小程序接单
 

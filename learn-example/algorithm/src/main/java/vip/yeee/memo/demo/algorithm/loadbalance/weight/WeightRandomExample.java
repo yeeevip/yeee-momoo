@@ -1,4 +1,4 @@
-package vip.yeee.memo.demo.algorithm.loadbalance.weight;
+package vip.yeee.memoo.demo.algorithm.loadbalance.weight;
 
 import java.util.ArrayList;
 import java.util.Collections;

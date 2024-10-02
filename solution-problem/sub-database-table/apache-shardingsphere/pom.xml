@@ -6,8 +6,8 @@
 
     <parent>
         <artifactId>sub-database-table</artifactId>
-        <groupId>vip.yeee.memo</groupId>
-        <version>4.0.0-SNAPSHOT</version>
+        <groupId>vip.yeee.memoo</groupId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>apache-shardingsphere</artifactId>
@@ -20,7 +20,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>vip.yeee.memo</groupId>
+            <groupId>vip.yeee.memoo</groupId>
             <artifactId>common-web</artifactId>
         </dependency>
     </dependencies>

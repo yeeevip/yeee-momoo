@@ -1,0 +1,13 @@
+package vip.yeee.memoo.common.activiti7;
+
+import org.springframework.context.annotation.ComponentScan;
+
+/**
+ * description......
+ *
+ * @author https://www.yeee.vip
+ * @since 2022/7/12 14:21
+ */
+@ComponentScan("vip.yeee.memoo.common.activiti7")
+public class CommonActiviti7AutoConfigure {
+}

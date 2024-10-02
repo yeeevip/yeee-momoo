@@ -1,4 +1,4 @@
-package vip.yeee.memo.demo.blockchain.hyperchain.contract;
+package vip.yeee.memoo.demo.blockchain.hyperchain.contract;
 
 import java.util.Objects;
 
